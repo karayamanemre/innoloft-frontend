@@ -6,7 +6,7 @@ import { FaSearch } from 'react-icons/fa';
 const Header = () => {
   return (
     <header className="bg-[#272E71] text-white shadow w-full">
-      <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+      <div className="container mx-auto px-14 py-3 flex justify-between items-center">
         <img src={innoloftLogo} alt="Innoloft Logo" className="h-10" />
         <div className="flex items-center relative text-gray-400">
           <input
