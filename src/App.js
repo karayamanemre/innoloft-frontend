@@ -26,19 +26,14 @@ const App = () => {
 
   return (
     <Router>
-      <div className="flex flex-col h-screen">
+      <div className="flex flex-col items-center h-screen">
         <Header logo={configuration.logo} mainColor={configuration.mainColor} />
-        <div className="flex-1 flex">
-          <Navigation
-            hasUserSection={configuration.hasUserSection}
-            mainColor={configuration.mainColor}
-          />
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/product/edit" element={<ProductEdit />} />
-          </Routes>
-        </div>
+
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/product/edit" element={<ProductEdit />} />
+        </Routes>
       </div>
     </Router>
   );
