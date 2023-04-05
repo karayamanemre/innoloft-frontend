@@ -18,7 +18,7 @@ const Product = () => {
   }
 
   return (
-    <div className="flex flex-col my-10 gap-4 items-center justify-center w-3/4">
+    <div className="flex flex-col my-4 gap-4 items-center justify-center w-3/4">
       <Link
         to="/product/edit"
         className="bg-[#272E71] text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium self-end"
@@ -40,11 +40,11 @@ const Product = () => {
               : product.description}
           </p>
         </div>
-        <div className="flex flex-col w-1/4 px-4 justify-start">
+        <div className="flex flex-col w-1/4 px-4 gap-2 justify-center">
           <img
             src={product.user.profilePicture}
             alt={`${product.user.firstName} ${product.user.lastName}`}
-            className="w-20 h-20 rounded-full mr-4"
+            className="w-20 h-20 rounded-full mr-4 self-start"
           />
           <div>
             <p className="font-bold">
@@ -64,7 +64,7 @@ const Product = () => {
               `${product.company.address.street} ${product.company.address.house}, ${product.company.address.zipCode} ${product.company.address.city.name}, ${product.company.address.country.name}`,
             )}&z=15&output=embed`}
             width="100%"
-            height="450"
+            height="350"
             frameBorder="0"
             style={{ border: 0 }}
             allowFullScreen
